@@ -492,3 +492,16 @@ template {
 [hidden] {
   display: none;
 }
+
+/* Custom
+   ========================================================================== */
+
+/**
+ * Limit image size and make it fit its container.
+ */
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  object-fit: cover;
+}
