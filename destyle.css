@@ -41,13 +41,19 @@ html {
    ========================================================================== */
 
 /**
- * Remove the margin in all browsers and fill available height.
+ * 1. Improve text readability.
+ * 2. Modern font stack.
+ * 3. Fil parent height.
+ * 4. Remove all margins.
  */
 
 body {
-  min-height: inherit;
-  height: 100%;
-  margin: 0;
+  -moz-osx-font-smoothing: grayscale;   /* 1 */
+  -webkit-font-smoothing: antialiased;  /* 1 */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';  /* 2 */
+  min-height: inherit;  /* 3 */
+  height: 100%; /* 3 */
+  margin: 0;  /* 4 */
 }
 
 /**
@@ -133,7 +139,7 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* 1 */
   font-size: inherit; /* 2 */
 }
 
@@ -182,7 +188,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* 1 */
   font-size: inherit; /* 2 */
 }
 
