@@ -24,6 +24,7 @@
  * 6. Always show the vertical scrollbar.
  * 7. Always hide the horizontal scrollbar.
  * 8. Fill all available height.
+ * 9. Improve text rendering.
  */
 
 html {
@@ -31,6 +32,9 @@ html {
   line-height: 1.15; /* 2 */
   -webkit-text-size-adjust: 100%; /* 3 */
   -webkit-tap-highlight-color: transparent; /* 4 */
+  -moz-osx-font-smoothing: grayscale;   /* 9 */
+  -webkit-font-smoothing: antialiased;  /* 9 */
+  text-rendering: optimizeLegibility;   /* 9 */
   width: calc(100vw - (100vw - 100%)); /* 5 */
   overflow-y: scroll; /* 6 */
   overflow-x: hidden; /* 7 */
@@ -41,19 +45,16 @@ html {
    ========================================================================== */
 
 /**
- * 1. Improve text readability.
- * 2. Modern font stack.
- * 3. Fil parent height.
- * 4. Remove all margins.
+ * 1. Modern font stack.
+ * 2. Fil parent height.
+ * 3. Remove all margins.
  */
 
 body {
-  -moz-osx-font-smoothing: grayscale;   /* 1 */
-  -webkit-font-smoothing: antialiased;  /* 1 */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';  /* 2 */
-  min-height: inherit;  /* 3 */
-  height: 100%; /* 3 */
-  margin: 0;  /* 4 */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';  /* 1 */
+  min-height: inherit;  /* 2 */
+  height: 100%; /* 2 */
+  margin: 0;  /* 3 */
 }
 
 /**
