@@ -20,6 +20,10 @@
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in iOS.
  * 4. Remove gray overlay on links for iOS.
+ * 5. https://stackoverflow.com/a/34884924
+ * 6. Always show the vertical scrollbar.
+ * 7. Always hide the horizontal scrollbar.
+ * 8. Fill all available height.
  */
 
 html {
@@ -27,16 +31,22 @@ html {
   line-height: 1.15; /* 2 */
   -webkit-text-size-adjust: 100%; /* 3 */
   -webkit-tap-highlight-color: transparent; /* 4 */
+  width: calc(100vw - (100vw - 100%)); /* 5 */
+  overflow-y: scroll; /* 6 */
+  overflow-x: hidden; /* 7 */
+  min-height: 100vh; /* 8 */
 }
 
 /* Sections
    ========================================================================== */
 
 /**
- * Remove the margin in all browsers.
+ * Remove the margin in all browsers and fill available height.
  */
 
 body {
+  min-height: inherit;
+  height: 100%;
   margin: 0;
 }
 
