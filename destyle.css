@@ -16,15 +16,17 @@
    ========================================================================== */
 
 /**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- * 3. Remove gray overlay on links for iOS.
+ * 1. Always use the default cursor.
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in iOS.
+ * 4. Remove gray overlay on links for iOS.
  */
 
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -webkit-tap-highlight-color: transparent; /* 3*/
+  cursor: default; /* 1 */
+  line-height: 1.15; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+  -webkit-tap-highlight-color: transparent; /* 4 */
 }
 
 /* Sections
@@ -139,7 +141,7 @@ address {
 a {
   background-color: transparent;
   text-decoration: none;
-  color: inherit;
+  color: pointer;
 }
 
 /**
@@ -208,10 +210,14 @@ sup {
 
 /**
  * Remove the border on images inside links in IE 10.
+ * Limit width and try to cover parent.
  */
 
 img {
   border-style: none;
+  display: inline-block;
+  max-width: 100%;
+  object-fit: cover;
   vertical-align: bottom;
 }
 
@@ -493,15 +499,11 @@ template {
   display: none;
 }
 
-/* Custom
-   ========================================================================== */
-
 /**
- * Limit image size and make it fit its container.
+ * Disable all user interactivity.
  */
 
-img {
-  display: inline-block;
-  max-width: 100%;
-  object-fit: cover;
+.disabled {
+  user-select: none;
+  pointer-events: none;
 }
