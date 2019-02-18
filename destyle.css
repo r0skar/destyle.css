@@ -158,7 +158,8 @@ address {
 a {
   background-color: transparent;
   text-decoration: none;
-  color: pointer;
+  cursor: pointer;
+  color: inherit;
 }
 
 /**
