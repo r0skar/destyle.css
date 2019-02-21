@@ -45,16 +45,14 @@ html {
    ========================================================================== */
 
 /**
- * 1. Modern font stack.
- * 2. Fil parent height.
- * 3. Remove all margins.
+ * 1. Fil parent height.
+ * 2. Remove all margins.
  */
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';  /* 1 */
-  min-height: inherit;  /* 2 */
-  height: 100%; /* 2 */
-  margin: 0;  /* 3 */
+  min-height: inherit;  /* 1 */
+  height: 100%; /* 1 */
+  margin: 0;  /* 2 */
 }
 
 /**
