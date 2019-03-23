@@ -519,7 +519,7 @@ template {
  * Disable all user interactivity.
  */
 
-.disabled {
+[disabled] {
   user-select: none;
   pointer-events: none;
 }
