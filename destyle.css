@@ -243,14 +243,14 @@ img {
   display: inline-block;
   max-width: 100%;
   object-fit: cover;
-  vertical-align: bottom;
+  vertical-align: text-bottom;
 }
 
 embed,
 object,
 iframe {
   border: 0;
-  vertical-align: bottom;
+  vertical-align: text-bottom;
 }
 
 /* Forms
@@ -509,7 +509,7 @@ template {
  */
 
 [hidden] {
-  display: none;
+  display: none !important;
 }
 
 /**
@@ -517,6 +517,6 @@ template {
  */
 
 [disabled] {
-  user-select: none;
-  pointer-events: none;
+  user-select: none !important;
+  pointer-events: none !important;
 }
