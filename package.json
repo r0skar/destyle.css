@@ -1,0 +1,11 @@
+{
+  "name": "destyle.css",
+  "version": "0.0.1",
+  "main": "destyle.css",
+  "license": "MIT",
+  "author": "Oskar Rainer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r0skar/destyle.css.git"
+  }
+}
