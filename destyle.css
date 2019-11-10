@@ -2,7 +2,6 @@
 
 /* Reset box-model
    ========================================================================== */
-
 * {
   box-sizing: border-box;
 }
@@ -128,6 +127,7 @@ dd {
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
+ * 3. Fix FF user-agent styles preventing color inheritance.
  */
 
 hr {
@@ -138,6 +138,7 @@ hr {
   border-top: 1px solid;
   margin: 0;
   clear: both;
+  color: inherit; /* 3 */
 }
 
 /**
