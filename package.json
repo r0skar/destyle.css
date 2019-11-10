@@ -1,7 +1,7 @@
 {
   "name": "destyle.css",
   "version": "0.0.1",
-  "main": "index.css",
+  "main": "destyle.css",
   "license": "MIT",
   "author": "Oskar Rainer",
   "repository": {
