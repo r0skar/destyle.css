@@ -248,6 +248,8 @@ textarea {
   outline: 0;
   border-radius: 0;
   text-align: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
 }
 
 [type='checkbox'] {
@@ -282,7 +284,6 @@ button,
 select {
   /* 1 */
   /* text-transform: none; */
-  text-transform: inherit;
 }
 
 /**
