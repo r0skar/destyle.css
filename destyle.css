@@ -505,6 +505,11 @@ html {
   /* width: calc(100vw - (100vw - 100%)); */
 }
 
+/* Add default cursor for default contents */
+html {
+  cursor: default;
+}
+
 /* Utility to disable user interactions */
 [disabled] {
   user-select: none !important;
